@@ -1,0 +1,92 @@
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, sans-serif;
+}
+
+
+.calculator {
+    width: 320px; 
+    background: #000;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.display {
+    display: block;
+    color: #fff;
+    font-size: 72px;
+    text-align: right;
+    padding: 20px 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    direction: rtl;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+
+button:hover {
+    background: #444;
+}
+
+.operator {
+    background: #f1a33c;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #e59400;
+}
+
+.zero {
+    grid-column: span 2;
+    width: 150px;
+    border-radius: 35px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.clear, .sign, .percent {
+    background: #a5a5a5;
+    color: #000;
+}
+
+.clear:hover, .sign:hover, .percent:hover {
+    background: #b5b5b5;
+}
+
+.equals {
+    background: #f1a33c;
+}
+
+.equals:hover {
+    background: #e59400;
+}
